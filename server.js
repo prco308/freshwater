@@ -41,7 +41,7 @@ app.get('/', function (req, res) {
 });
 
 db.on('connected', function() {
-    logger.info('Mongo DB connection open for DB');
+    console.log('Mongo DB connection open for DB');
 });
 
 /* app.get('/', function(req, res){
