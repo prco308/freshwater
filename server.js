@@ -40,13 +40,6 @@ app.get('/', function (req, res) {
     return res.redirect('/app');
 });
 
-db.listCollections({name: "users"})
-    .next(function(err, collinfo) {
-        if (collinfo) {
-            console.log("colelction exists");
-        }
-    });
-
 /* app.get('/', function(req, res){
     res.sendfile('index.html', { root: __dirname + "/app/front" } );
 }); */
@@ -179,4 +172,5 @@ function submitQuestion(data){
 // start server
 server.listen(port, function () {
     console.log('Server listening at http://' + port);
+	db.createCollection("log", { capped : true, size : 5242880, max : 5000 } )
 });
