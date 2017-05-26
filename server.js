@@ -170,6 +170,6 @@ function submitQuestion(data){
 
 
 // start server
-server.listen(port, function() {
+server.listen(server_port, function() {
     console.log('Our app is running on http://localhost:' + port);
 });
