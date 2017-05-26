@@ -2,8 +2,8 @@
 var express = require('express');
 var http  = require('http');
 var app = express();
-var server_port = process.env.port || 5000;
-app.set('port', server_port);
+var port = process.env.PORT || 3000;
+app.set('port', port);
 var session = require('express-session');
 var bodyParser = require('body-parser');
 var expressJwt = require('express-jwt');
@@ -170,9 +170,6 @@ function submitQuestion(data){
 
 
 // start server
-app.get('/', function(request, response) {
-    var result = 'App is running'
-    response.send(result);
-}).listen(app.get('port'), function() {
-    console.log('App is running, server is listening on port ', app.get('port'));
+server.listen(3000, function () {
+    console.log('Server listening at http://' + server.address().address + ':' + server.address().port);
 });
