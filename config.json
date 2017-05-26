@@ -1,5 +1,5 @@
 ﻿{
     "connectionString": "mongodb://admin:admin@ds151651.mlab.com:51651/heroku_fvg1hr4q",
-    "apiUrl": "http://freswatherinvertebrates.herokuapp.com:process.env.PORT/api",
+    "apiUrl": "http://localhost:process.env.PORT/api",
     "secret": "hello"
 }
