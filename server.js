@@ -40,8 +40,8 @@ app.get('/', function (req, res) {
     return res.redirect('/app');
 });
 
-db.on('connected', function() {
-    console.log('Mongo DB connection open for DB');
+db.collectionNames(collName, function(err, names) {
+    console.log('Exists: ', names.length > 0);
 });
 
 /* app.get('/', function(req, res){
