@@ -40,6 +40,10 @@ app.get('/', function (req, res) {
     return res.redirect('/app');
 });
 
+db.on('connected', function() {
+    logger.info('Mongo DB connection open for DB');
+});
+
 /* app.get('/', function(req, res){
     res.sendfile('index.html', { root: __dirname + "/app/front" } );
 }); */
