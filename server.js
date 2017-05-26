@@ -40,9 +40,12 @@ app.get('/', function (req, res) {
     return res.redirect('/app');
 });
 
-db.collectionNames(collName, function(err, names) {
-    console.log('Exists: ', names.length > 0);
-});
+db.listCollections({name: "users"})
+    .next(function(err, collinfo) {
+        if (collinfo) {
+            console.log("colelction exists");
+        }
+    });
 
 /* app.get('/', function(req, res){
     res.sendfile('index.html', { root: __dirname + "/app/front" } );
