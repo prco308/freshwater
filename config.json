@@ -1,5 +1,5 @@
 ﻿{
-    "connectionString": "mongodb://<dbuser>:<dbpassword>@ds151651.mlab.com:51651/heroku_fvg1hr4q",
+    "connectionString": "mongodb://heroku_12345678:random_password@ds029017.mLab.com:29017/heroku_12345678",
     "apiUrl": "http://localhost:3000/api",
     "secret": "hello"
 }
