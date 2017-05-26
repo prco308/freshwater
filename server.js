@@ -11,7 +11,7 @@ var config = require('config.json');
 var server = http.createServer(app);
 var io = require('socket.io').listen(server);
 var mongo = require('mongoskin');
-var db = mongo.db(config.connectionString, { native_parser: true });
+var db = mongo.db("mongodb://admin:admin@ds151651.mlab.com:51651/heroku_fvg1hr4q", { native_parser: true });
 db.bind('questions');
 var questionArray = [];
 var collectionSize = 0;
