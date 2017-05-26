@@ -1,0 +1,37 @@
+﻿<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
+<h1>Question selector</h1>
+<button onclick="initQuestionTree()">Display/refresh question tree</button>
+<input type="button" value="Expand All" onclick="$('#jstree').jstree('open_all');">
+<input type="button" value="Collapse All" onclick="$('#jstree').jstree('close_all');">
+<input type="button" value="Delete selected question" onclick="deleteQuestion();">
+<div id="jstree"></div>
+
+<div class="form-container">
+    <h2>Add Question</h2>
+    <form method="post">
+		<div class="form-group">
+            <label for="parentID">Parent ID</label>
+            <input type="text" name="parentID" id="parentID" class="form-control" disabled="true" value="" />
+        </div>
+        <div class="form-group">
+            <label for="description">Description</label>
+            <input type="text" name="text" id="text" class="form-control" value="" />
+        </div>
+        <div class="form-group">
+            <label for="answer">Answer</label>
+            <input type="text" name="answer" id="answer" class="form-control" value="" />
+        </div>
+        <div class="form-group">
+            <label for="key">Key (e.g. k1 for key one)</label>
+            <input type="text" name="key" id="key" class="form-control" value="" />
+        </div>
+		<div class="form-group">
+            <label for="qNumber">Question number (e.g. q1 for question one)</label>
+            <input type="text" name="qNumber" id="qNumber" class="form-control" value="" />
+        </div>
+        
+        <div class="form-group">
+            <button type="submit" id="submit" onclick="submitQuestion()">Submit</button>
+        </div>
+    </form>
+</div>

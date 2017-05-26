@@ -1,0 +1,123 @@
+
+.header1{
+	border-bottom:1px solid #eee;
+	padding:10px 0px;
+	width: 70%;
+	text-align:center;	
+	overflow: auto;
+	margin:20px;
+	
+}
+
+.header1 a{
+	color:#333;
+	text-decoration:none;
+}
+
+
+.logo{
+	background:#000000;
+	color:#ffffff;
+	padding: 10px;
+	
+}
+
+.log{
+	position:relative;
+	padding:0px;
+	margin:0px;
+	padding:0px;
+		
+}
+
+.log img{
+	float:right;
+	top:0px;
+	right:0px;
+	position:absolute;
+	margin:20px;
+	
+
+}
+
+.text{
+	width:70%;
+	text-align:left;
+	overflow:auto;
+	padding: 10px;
+}
+
+.menu ul
+	{
+		position: absolute;
+		left: -9999px;
+		top:-9999px;
+		list-style-type: none;
+	}
+	
+	header{
+	background:#000000;
+	color:#ffffff;
+	padding:1px 10px;
+	overflow:auto;
+	font-size:16px;
+}
+
+footer{
+	background:#000000;
+	color:#ffffff;
+	padding:5px 10px;
+	overflow:auto;
+}
+
+@media only screen and (max-width:900px){
+#container{
+	width:90%;
+	
+	}
+}
+
+ #container a {
+	text-decoration: none;
+}
+#container li{
+	list-style:none;
+		
+}
+#sidebar{
+	margin:0px;
+	padding:10px;
+}
+#sidebar ul {   
+list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #000000;
+	color: #ffffff;
+	border:1px solid black;
+	float:left;
+	
+	
+}
+ #sidebar li a{
+	display: block;
+    color: #ffffff;
+    padding: 8px 16px;
+    text-decoration: none;
+	
+}
+#sidebar li a:hover {
+    background-color: #FAEBD7;
+    color: black;
+}
+input[type="text"], input[type="password"]{
+	outline:none;
+	padding:10px;
+	display:block;
+	width:300px;
+	border-radius: 3px;
+	border: 1px solid #eee;
+	margin:20px auto;
+	
+}

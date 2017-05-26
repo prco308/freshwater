@@ -1,0 +1,17 @@
+﻿<header>
+        <div class="flash-message" ng-if="flash">
+            <div class="{{'alert alert-' + flash.type}}" ng-bind="flash.message"></div>
+        </div>
+</header>
+
+<form id="questionForm" data-question="1">
+			<!-- <button id="start" onclick="setUp();">Start</button> <br> -->
+			<button id="startOver" onclick="restart();">Start over</button> <br>
+			<button id="test" onclick="testing();">Start</button> <br>
+			<label for="textField"></label>
+			<ul>
+					  <input type="radio" name="answer" value="option1" id="radio1"/><label for="rdo1">  </label> <br>
+					  <input type="radio" name="answer" value="option2" id="radio2"/> <label for="rdo2">  </label> <br>
+			</ul>
+			<button id="submit" onclick="nextQuestion();">Submit</button>
+</form>
