@@ -2,7 +2,7 @@
 var express = require('express');
 var http  = require('http');
 var app = express();
-var port = process.env.PORT || 3000;
+var port = process.env.PORT;
 app.set('port', port);
 var session = require('express-session');
 var bodyParser = require('body-parser');
