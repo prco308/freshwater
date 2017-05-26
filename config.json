@@ -1,5 +1,5 @@
 ﻿{
-    "connectionString": "mongodb://localhost:27017/mean-stack-registration-login-example",
+    "connectionString": "mongodb://heroku_fvg1hr4q:heroku_fvg1hr4q@ds151651.mlab.com:51651/heroku_fvg1hr4q",
     "apiUrl": "http://localhost:3000/api",
     "secret": "hello"
 }
