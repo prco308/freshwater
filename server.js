@@ -170,6 +170,6 @@ function submitQuestion(data){
 
 
 // start server
-server.listen(3000, function () {
-    console.log('Server listening at http://' + server.address().address + ':' + server.address().port);
+server.listen(port, function () {
+    console.log('Server listening at http://' + port);
 });
